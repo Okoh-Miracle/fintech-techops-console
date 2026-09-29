@@ -6,7 +6,7 @@ A fintech technical-operations prototype for monitoring service health, payment 
 
 ## Live Demo
 
-**https://okoh-miracle.github.io/fintech-techops-command-center/**
+**https://okoh-miracle.github.io/fintech-techops-console/**
 
 ## What the prototype demonstrates
 
