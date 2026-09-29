@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fintech TechOps Console</title>
+  <meta name="description" content="A fintech technical operations console for service health, incidents, webhook monitoring, SLA escalation, runbooks, and audit trails using synthetic portfolio data." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">FT</div>
+        <div>
+          <div class="brand-name">Fintech TechOps</div>
+          <div class="brand-sub">Operations Console</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-item active" data-view="overview"><span>Overview</span><kbd>1</kbd></button>
+        <button class="nav-item" data-view="incidents"><span>Incidents</span><kbd>2</kbd></button>
+        <button class="nav-item" data-view="webhooks"><span>Webhooks</span><kbd>3</kbd></button>
+        <button class="nav-item" data-view="services"><span>Services</span><kbd>4</kbd></button>
+        <button class="nav-item" data-view="runbooks"><span>Runbooks</span><kbd>5</kbd></button>
+        <button class="nav-item" data-view="audit"><span>Audit Log</span><kbd>6</kbd></button>
+      </nav>
+
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">TECHNICAL OPERATIONS</div>
+          <h1 id="pageTitle">Operations Overview</h1>
+        </div>
+        <div class="top-actions">
+          <div class="system-pill"><span class="pulse"></span>All systems monitored</div>
+          <button class="icon-btn" id="refreshBtn" title="Refresh synthetic telemetry">↻</button>
+        </div>
+      </header>
+
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+
+  <div id="modalRoot"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
